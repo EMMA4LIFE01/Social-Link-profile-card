@@ -1,161 +1,108 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-
     background-color: hsl(0, 0%, 8%);
-}
-
-.body{
     justify-content: center;
-    align-content: center;
+    align-items: center;
     display: flex;
+    min-height: 100vh;
 }
 
 main{
     margin: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-items: center;
     background-color: hsl(0, 0%, 12%);
-    min-height: 100vh;
     font-family: "inter", sans-serif;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 10px;
-    
+    padding: 0px 10px;
 }
 
-.about{
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    color: hsl(0, 0%, 100%);
-    padding: 20px 10px 20px 10px;
-    white-space: nowrap;
-    font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-h3{
-    text-align: center;
-    font-size: 16px;
+img{
+    width: 35%;
+    border-radius: 50%;
+    margin-top: 15px;
 }
 
 h1{
     font-size: 25px;
     text-align: center;
-    margin-bottom: 10px;
-    font-weight: 700;
+    margin-top: 10px;
+    font-weight: 600;
     color: hsl(0, 0%, 100%);
 }
 
-.location{
+h3{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 7px;
     color: hsl(75, 94%, 57%);
 }
 
-img{
-    align-self: center;
-    width: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 30px 20px 20px 20px;
+.about{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    white-space: nowrap;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    cursor: auto;
 }
 
 ul a{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: none;
+    justify-content: center;
     color: hsl(0, 0%, 100%);
-    padding: 15px;
+    padding: 15px 60px;
     background-color: hsl(0, 0%, 20%);
-    margin: 15px;
+    margin: 15px 0px;
     border-radius: 10px;
     font-weight: 700;
 }
 
+footer {
+    text-align: center;
+    overflow: hidden;
+    color: hsl(0, 0%, 100%);
+    font-size: 11px;
+    max-width: 300px;
+    min-width: 300px;
+    margin-bottom: 3px;
+}
+
+/* For Tablets and Desktop display */
+@media screen and (min-width:768px) {
+    
+footer a:hover {
+    cursor: pointer;
+    color: hsl(230, 90%, 57%);
+    text-decoration: underline;
+} 
+
 .GitHub:hover{
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 20%);
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-self: center;
-    color: hsl(0, 0%, 100%);
-    white-space: nowrap;
-}
-
-.footer a {
-    margin-left: 3px;
-    margin-bottom: 3px;
-    color: hsl(0, 0%, 100%);
-}
-
-.footer a:hover {
-    text-decoration: none;
     cursor: pointer;
 }
 
-@media screen and (min-width:568px) {
-    main{
-        min-width: 500px;
-        min-height: unset;
-        margin-top: unset;
-        margin-bottom: unset;
-        margin: 90px;
+img{
+    width: 40%;
+    margin-top: 7px;
+}
 
-    }
+ul a{
+    margin: 11px 0;
+    padding: 11px 72px;
+}
 
-    .body{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        min-height: 100vh;
-        max-height: 100vh;
-    }
-
-    img{
-        width: 120px;
-        margin: 10px 20px 20px 20px;
-    }
-
-    .about{
-        font-size: 20px;
-        padding-bottom: 9px;
-    }
-
-    h1{
-        font-size: 25px;
-    }
-
-    .location{
-        font-size: 19px;
-    }
-
-    ul a{
-        font-size: 19px;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: row;
-        white-space: nowrap;
-        text-align: center;
-        justify-self: center;
-        color: hsl(0, 0%, 100%);
-    }
-
-    .footer a{
-        margin-left: 3px;
-        color: hsl(0, 0%, 100%);
-    }
 }
